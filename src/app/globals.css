@@ -7,13 +7,6 @@
   --text-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: black;
-    --text-color: white;
-  }
-}
-
 html, body {
   margin: 0;
   padding: 0;
