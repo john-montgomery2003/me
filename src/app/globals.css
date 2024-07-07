@@ -15,13 +15,3 @@ html, body {
   color: var(--text-color);
 }
 
-#root, #__next {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.fullscreen-section {
-  @apply flex items-center justify-center min-h-screen;
-  height: 100svh;
-}
