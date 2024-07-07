@@ -23,12 +23,5 @@ html, body {
 
 .fullscreen-section {
   @apply flex items-center justify-center min-h-screen;
-  height: 100vh;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .fullscreen-section {
-    height: calc(100vh - constant(safe-area-inset-top) - constant(safe-area-inset-bottom));
-    height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-  }
+  height: 100dvh;
 }
