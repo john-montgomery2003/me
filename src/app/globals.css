@@ -23,5 +23,5 @@ html, body {
 
 .fullscreen-section {
   @apply flex items-center justify-center min-h-screen;
-  height: 100dvh;
+  height: 100svh;
 }
