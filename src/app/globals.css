@@ -5,7 +5,6 @@
 :root {
   --bg-color: white;
   --text-color: black;
-  --vh: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +27,6 @@ html, body {
 }
 
 .fullscreen-section {
-  @apply flex items-center justify-center;
-  height: var(--vh);
+  @apply flex items-center justify-center min-h-screen;
+  height: 100vh;
 }
