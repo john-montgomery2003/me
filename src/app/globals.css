@@ -16,8 +16,8 @@ html, body {
 }
 
 
-.outline-text {
-  text-shadow: 
+.outlinedText {
+  text-shadow:
     -1px -1px 0 #ffffff,
     1px -1px 0 #ffffff,
     -1px 1px 0 #ffffff,

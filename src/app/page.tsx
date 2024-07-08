@@ -59,7 +59,7 @@ export default async function Home() {
     return (
         <section className="bg-[url('/home.jpg')] bg-cover bg-center h-dvh flex flex-col justify-start relative">
             <div className="text-center pt-10 w-full">
-                <h1 className="text-primary font-bold text-5xl font-header outlined-text">John Montgomery</h1>
+                <h1 className="text-primary font-bold text-5xl font-header outlinedText">John Montgomery</h1>
                 <h4 className="text-secondary font-light text-4xl font-body">software engineer</h4>
             </div>
             <div className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2">
