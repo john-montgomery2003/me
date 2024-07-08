@@ -20,9 +20,7 @@ const config: Config = {
         header: ['Cinzel', 'serif'],
         body: ['Raleway', 'sans-serif'],
       },
-      spacing: {
-        500: '500px',
-      },
+     
       animation: {
         'spin-slow': 'spin 10s linear infinite',
       },
