@@ -1,5 +1,6 @@
 import RotatingCircle from "../components/rotatingCircle";
 import NavBar from "../components/navBar"
+import AboutMe from "@/components/aboutMeBanner";
 
 async function getRecentlyPlayedTrack(accessToken: string): Promise<{ url: string, songTitle: string, artist: string }> {
     const response = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=1', {
@@ -58,12 +59,16 @@ export default async function Home() {
     const recentlyPlayedTrack = await getRecentlyPlayedTrack(at);
 
     return (
-        <section className="bg-[url('/home.jpg')] bg-cover bg-center h-dvh flex flex-col justify-start relative">
+        <section className="bg-[url('/home.jpg')] bg-cover bg-center h-screen max-h-dvh flex flex-col justify-start relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+                <AboutMe />
+            </div>
             <NavBar />
             <div className="text-center pt-12 w-full">
                 <h1 className="text-primary font-bold text-5xl font-header outlinedText">John Montgomery</h1>
-                <h4 className="text-secondary font-light text-4xl font-body">software engineer</h4>
+                <h4 className="text-secondary font-light text-xl font-body">software engineer</h4>
             </div>
+            
             <div className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2">
                 {RotatingCircle(recentlyPlayedTrack)}
             </div>
