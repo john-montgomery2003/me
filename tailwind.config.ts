@@ -15,6 +15,9 @@ const config: Config = {
         accent: '#56C596',     // Waterfall Turquoise
         background: '#F5F5F5', // Cloud White
         text: '#333333',       // Dark Gray for text
+        kodakYellow: '#FFC300',
+        kodakRed: '#FF5733',
+        kodakBlack: '#000000',
       },
       fontFamily: {
         header: ['Cinzel', 'serif'],
